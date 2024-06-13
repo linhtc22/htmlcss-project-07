@@ -83,11 +83,6 @@ h6 {
     margin-left: 10px;
     width: 20px;
     height: 20px;
-    transition: 0.25s;
-}
-
-.btn__icon:hover {
-    scale: 1.1;
 }
 
 .section-heading {
@@ -309,4 +304,67 @@ h6 {
 
 .hero__cta-link:hover {
     text-decoration: underline;
+}
+
+/* About */
+.about {
+    margin-top: 138px;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    row-gap: 146px;
+}
+
+.about__label {
+    color: #5e6085;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.about__heading {
+    margin-top: 15px;
+    max-width: 446px;
+}
+
+.about__desc {
+    max-width: 431px;
+}
+
+.about__checklist {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    gap: 36px;
+    margin-top: 54px;
+}
+
+.about__checklist-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    color: #48496a;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.about__checklist-item::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #ff5d31;
+    box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+    border-radius: 4px;
+}
+
+.about__checklist-item::after {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    content: url(../icons/check.svg);
 }
