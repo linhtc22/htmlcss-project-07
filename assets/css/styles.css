@@ -580,3 +580,30 @@ h6 {
     opacity: 1;
     height: 1.5px;
 }
+
+/* Service */
+.service {
+    margin-top: 185px;
+    padding: 68px 0 100px;
+    background: #fff6ed;
+}
+
+.service__top {
+    text-align: center;
+}
+
+.service__desc {
+    font-family: Sora;
+    margin-bottom: 15px;
+    color: #5e6085;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.service__body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 64px;
+    margin-top: 71px;
+}
