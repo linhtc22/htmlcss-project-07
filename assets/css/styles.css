@@ -939,6 +939,10 @@ h6 {
     background: #fff;
 }
 
+.pricing-item--active {
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
+
 .pricing-item__type {
     color: #ff5b2e;
     font-size: 1.2rem;
@@ -993,4 +997,137 @@ h6 {
 .pricing-item__item::before {
     margin-right: 12px;
     content: url('../img/price-check.svg');
+}
+
+/* Review */
+.review {
+    padding: 104px 0 52px;
+}
+
+.review__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+}
+
+.review__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #ff5b2e;
+    border: 1.5px solid #ffd1c4;
+    background: transparent;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+.review__control:nth-of-type(2) {
+    margin-left: auto;
+}
+
+.review__control:hover {
+    background: #ff5b2e;
+    border-color: #ff5b2e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.review__list {
+    display: flex;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    column-gap: 115px;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.review-item__media {
+    position: relative;
+    flex-shrink: 0;
+    width: 274px;
+    margin-top: -53px;
+    border-radius: 137px;
+}
+
+.review-item__media::after {
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 82%;
+    content: '';
+    background: #ffda54;
+    border-radius: inherit;
+}
+
+.review-item__img {
+    position: relative;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.review__content {
+    overflow: hidden;
+}
+
+.review-item__content {
+    margin-top: 28px;
+}
+
+.review-item__quote {
+    width: 553px;
+    margin-top: 24px;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 155.556%;
+}
+
+.review-item__author {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    color: #282828;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.review-item__author::before {
+    display: inline-block;
+    content: '';
+    margin-right: 8px;
+    border-radius: 1px;
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+
+.review__dots {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.review__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid #ff5b2e;
+}
+
+.review__dot:hover {
+    background: #ff5b2e;
+    cursor: pointer;
+}
+
+.review__dot--active {
+    width: 24px;
+    background: #ff5b2e;
 }
